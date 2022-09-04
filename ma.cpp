@@ -1,18 +1,16 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main()
 {
-	int arr[3][2];
-	for(int i=0;i<3;i++)
+	vector<vector<int>> m{{1,2,3},{1,2,3}};
+	for(int i=0;i<m.size();i++)
 	{
-		for(int j=0;j<2;j++)
-		arr[i][j]=i+j;
-	}
-	for(int i=0;i<3;i++)
-	{
-		for(int j=0;j<2;j++)
+		for(int j=0;j<m[i].size();j++)
 		{
-			cout<<arr[i][j]<<" ";
+			cout<<m[i][j]<<' ';
 		}
+		cout<<endl;
 	}
+	return 0;
 }
